@@ -1,0 +1,10 @@
+body {
+    font-family:helvetica;
+    background:cornsilk;
+}
+
+#header {
+    display:grid;
+    padding: 10px;
+    justify-content:end;
+}
