@@ -41,7 +41,7 @@ var tabulate = function (data,columns) {
   .then(function(data) {
       // data is now whole data set
       // draw chart in here!
-      var columns = ["id", "title","authors", "year","journal","link"];
+      var columns = ["title","authors", "year","journal","link"];
       tabulate(data, columns);
   })
   .catch(function(error){
