@@ -8,6 +8,7 @@
 body {
   font-family: helvetica;
   background: lightgoldenrodyellow;
+  scroll-behavior: smooth;
   margin: 0;
 }
 
