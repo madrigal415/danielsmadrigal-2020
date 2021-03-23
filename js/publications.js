@@ -2,13 +2,22 @@
 
 const publicationsURL = `https://docs.google.com/spreadsheets/d/e/2PACX-1vSdMoLdjbXCWBHtdrkEvpgLBx-ouUQtCirElYCaJUSqPsC4WbX4LdmoEWpJUw6q33NIb85mzfcH02VU/pub?gid=2137533580&single=true&output=csv`;
 
+const publications = `../data/dsm-publications - public.csv`
+
 
 var tabulate = function (data,columns) {
-    console.log(data);
+
     console.log(columns);
-    var table = d3.select('body').append('table')
-      var thead = table.append('thead')
-      var tbody = table.append('tbody')
+
+    var width = document.querySelector('#publications')
+        .offsetWidth;
+    console.log(width);
+    // create table
+    var table = d3.select('#publications')
+        .append('table')
+      
+      var thead = table.append('thead');
+      var tbody = table.append('tbody');
   
       thead.append('tr')
         .selectAll('th')
@@ -21,6 +30,7 @@ var tabulate = function (data,columns) {
           .data(data)
           .enter()
         .append('tr')
+        .attr("class", "border-bottom");
   
       var cells = rows.selectAll('td')
           .data(function(row) {
@@ -37,13 +47,13 @@ var tabulate = function (data,columns) {
 
 
 
- d3.csv(publicationsURL)
+ d3.csv(publications)
   .then(function(data) {
       // data is now whole data set
       // draw chart in here!
-      var columns = ["title","authors", "year","journal","link"];
+      var columns = ["title","authors", "year","journal"];
       tabulate(data, columns);
   })
   .catch(function(error){
      // handle error   
-  })
+  });

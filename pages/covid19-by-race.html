@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>
+      dataviz: COVID-19 Cases and Deaths by Race/Ethnicity in California
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="shortcut icon" href="#" />
+  </head>
+
+  <body>
+    <!-- <script src="jscript.js"></script> -->
+    <div id="header">
+      <a href="/">← back home</a>
+      <h1>COVID-19 Cases and Deaths by Race/Ethnicity in California</h1>
+    </div>
+
+    <main>
+      <div class="container">
+        <h4 id="dataDate"></h4>
+        <h4>cases per 100,000</h4>
+        <div id="d3idC"></div>
+      </div>
+      <div class="container">
+        <h4>deaths per 100,000</h4>
+        <div id="d3idD"></div>
+      </div>
+      <div class="container">
+        <details>
+          <summary>About the data</summary>
+          <p>
+            The number of COVID-19 cases and deaths were collected by the
+            California Deparment of Public Health's Coronavirus Science Branche
+            and made publically available through an API. The rates were
+            calculated with by dividing the number of cases and deaths for each
+            racial/ethnic group provided by API by the size of the population.
+            The size of the population for each racial/ethnic group was
+            calculated by multiplying the California population (39,512,223 --
+            https://www.census.gov/quickfacts/CA ) by the percent that
+            racial/ethnic group represents (a figure provide by the API). These
+            charts do not include data for COVID-19 cases and deaths that were
+            not identified. For more information, visit the
+            <a
+              href="https://data.chhs.ca.gov/dataset/covid-19-time-series-metrics-by-county-and-state"
+              target="_blank"
+              >California Department of Public Health's Coronavirus Science
+              Branch webpage</a
+            >.
+          </p>
+        </details>
+      </div>
+    </main>
+    <footer>created by daniel s. madrigal</footer>
+    <script src="../js/d3.min.js"></script>
+    <script src="../js/covidChart.js"></script>
+  </body>
+</html>

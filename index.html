@@ -12,21 +12,35 @@
     <div id="header">
       <h1>daniel s. madrigal</h1>
     </div>
+    <div id="nav">
+      <a href="#ice"><button>🧊 Ice Breaker Maker</button></a>
+      <a href="#dataviz"><button>📊 Data Viz</button></a>
+      <a href="#publications"><button>📚 Publications</button></a>
+    </div>
 
-    <content>
-      <div>
+    <main>
+      <div id="ice">
         <h2>Ice Breaker Maker</h2>
         <p>
           Randomly generated questions for connection. Take the
           <a href="www.icebreakermaker.com">icebreakermaker</a> for a spin.
         </p>
       </div>
-
-      <div>
-        <h2>Publications</h2>
-        <p>Things that I wrote, or helped write.</p>
+      <div id="dataviz">
+        <h2>Data Viz</h2>
+        <div id="dataVizContainer">
+          <div class="dataViz">
+            <a href="/pages/covid19-by-race.html"
+              ><h3>COVID-19 Cases and Deaths by Race Ethnicity Bar Chart</h3></a
+            >
+          </div>
+        </div>
       </div>
-    </content>
+      <div id="publications">
+        <h2>Publications</h2>
+      </div>
+    </main>
+    <footer>created by daniel s. madrigal</footer>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="js/publications.js"></script>
   </body>
