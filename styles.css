@@ -59,6 +59,7 @@ h1 {
   text-align: center;
   padding: 0 15vw;
   color: var(--white);
+  font-size: 3em;
 }
 
 h2 {
