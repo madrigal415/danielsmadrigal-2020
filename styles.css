@@ -35,6 +35,15 @@ body {
   grid-template-columns: repeat(3, 20vw);
   padding: 20px;
 }
+
+.grow { 
+transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+transform: scale(1.1); 
+}
+
 main {
   padding: 5px 10vw;
   background: var(--white);
