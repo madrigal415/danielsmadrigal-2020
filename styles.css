@@ -62,6 +62,8 @@ button {
   grid-gap: 20px;
 }
 .dataViz {
+  display: grid;
+  place-items: start end;
   padding: 20px;
   border-top: 5px solid var(--green);
 }
