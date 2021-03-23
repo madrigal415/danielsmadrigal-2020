@@ -8,6 +8,15 @@
 
 body {
   font-family: helvetica;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+#header {
+  display: grid;
+  padding: 10px;
+  justify-content: center;
+  color: var(--blue);
   background: linear-gradient(
     180deg,
     #1494de,
@@ -19,15 +28,6 @@ body {
     #57dffc,
     #6bebff
   );
-  scroll-behavior: smooth;
-  margin: 0;
-}
-
-#header {
-  display: grid;
-  padding: 10px;
-  justify-content: center;
-  color: var(--blue);
 }
 #nav {
   display: grid;
