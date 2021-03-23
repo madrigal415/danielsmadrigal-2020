@@ -44,13 +44,16 @@ main {
 h1 {
   text-align: center;
   padding: 0 15vw;
+  color: var(--white);
 }
+
 h2 {
   color: var(--orange);
 }
 
 a {
   color: var(--blue);
+  text-decoration:none;
 }
 
 a:visited {
