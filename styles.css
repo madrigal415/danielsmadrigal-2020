@@ -34,7 +34,6 @@ body {
   justify-content: space-evenly;
   grid-template-columns: repeat(3, 20vw);
   padding: 20px;
-  border-bottom: 5px solid var(--blue);
 }
 main {
   padding: 5px 10vw;
@@ -51,9 +50,8 @@ h2 {
   color: var(--orange);
 }
 
-a:link {
-  color: var(--blue); 
-  text-decoration: none!important;  
+a {
+  color: var(--blue);
 }
 
 a:visited {
