@@ -8,7 +8,17 @@
 
 body {
   font-family: helvetica;
-  background: lightgoldenrodyellow;
+  background: linear-gradient(
+    180deg,
+    #1494de,
+    #04a1e5,
+    #07aeeb,
+    #1bbaf0,
+    #2fc7f5,
+    #43d3f8,
+    #57dffc,
+    #6bebff
+  );
   scroll-behavior: smooth;
   margin: 0;
 }
