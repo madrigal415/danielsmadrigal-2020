@@ -51,9 +51,9 @@ h2 {
   color: var(--orange);
 }
 
-a {
-  color: var(--blue);
-  text-decoration:none;
+a:link {
+  color: var(--blue); 
+  text-decoration: none!important;  
 }
 
 a:visited {
