@@ -1,6 +1,7 @@
 :root {
   --orange: orangered;
   --green: rgb(8, 181, 8);
+  --ltgreen: rgb(180, 237, 180);
   --blue: rgb(28, 89, 164);
   --white: whitesmoke;
 }
@@ -65,9 +66,7 @@ button {
   border-top: 5px solid var(--green);
 }
 .dataViz:hover {
-  background: var(--blue);
-  color: var(--white);
-  opacity: 0.6;
+  background: var(--ltgreen);
 }
 
 .axis path,
