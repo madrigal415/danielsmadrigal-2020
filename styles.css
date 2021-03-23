@@ -6,6 +6,11 @@
   --white: whitesmoke;
 }
 
+@font-face {
+  font-family: watermelon;
+  src: url(./assets/Watermelon Regular.otf);
+}
+
 body {
   font-family: helvetica;
   scroll-behavior: smooth;
@@ -50,6 +55,7 @@ main {
   border-top: 10px solid var(--green);
 }
 h1 {
+  font-family: watermelon, Optima, Courier;
   text-align: center;
   padding: 0 15vw;
   color: var(--white);
