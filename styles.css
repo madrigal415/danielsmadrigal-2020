@@ -4,17 +4,35 @@
   --ltgreen: rgb(180, 237, 180);
   --blue: rgb(28, 89, 164);
   --white: whitesmoke;
+
+  /* Font Sizes */
+  --baseFontSize: 1rem;
+  --baseNavSize: 0.64rem;
+  --smallFontSize: 0.8rem;
+  --smallestFontSize: 0.512rem;
+
+  --xtra-big-ass-heading: 3.052rem;
+  --xtra-heading: 2.441rem;
+  --heading-1: 1.953rem;
+  --heading-2: 1.563rem;
+  --heading-3: 1.25rem;
+  --heading-4: var(--baseFontSize);
+  --heading-5: var(--smallFontSize);
+  --heading-6: 0.64rem;
+  --heading-7: var(--smallestFontSize);
 }
 
 @font-face {
   font-family: watermelon;
-  src: url(./assets/Watermelon Regular.otf);
+  src: url('/assets/Watermelon Regular.otf') format('otf');
 }
 
 body {
   font-family: helvetica;
   scroll-behavior: smooth;
   margin: 0;
+  line-height: 1.4;
+  font-size: var(--baseFontSize);
 }
 
 #header {
@@ -41,12 +59,12 @@ body {
   padding: 20px;
 }
 
-.grow { 
-transition: all .2s ease-in-out; 
+.grow {
+  transition: all 0.2s ease-in-out;
 }
 
-.grow:hover { 
-transform: scale(1.1); 
+.grow:hover {
+  transform: scale(1.1);
 }
 
 main {
@@ -59,7 +77,7 @@ h1 {
   text-align: center;
   padding: 0 15vw;
   color: var(--white);
-  font-size: 3em;
+  font-size: var(--xtra-heading);
 }
 
 h2 {
@@ -81,6 +99,10 @@ button {
   cursor: pointer;
   font-size: 0.8rem;
   min-width: 15vw;
+}
+
+p {
+  font-size: var(--baseFontSize);
 }
 
 #dataVizContainer {
