@@ -52,7 +52,7 @@ var makeDivs = function(data){
     let publications = "";
 
     data.map(x =>{
-      publications += `<div><h4>${x.title}</h4><hr><p>${x.authors}, ${x.journal},${x.year}</p><p><a href="${x.link}">check it out</a></p></div>`;
+      publications += `<div class="pubs"><h4>${x.title}</h4><hr><p>${x.authors}, ${x.journal},${x.year}</p><p><a href="${x.link}">check it out</a></p></div>`;
     })
 
     console.log(data);

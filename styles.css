@@ -169,6 +169,10 @@ table tr:first-child th {
   border-bottom: 1px solid black;
   color: red;
 }
+.pubs {
+  padding: 5px;
+  background: white;
+}
 
 footer {
   border-image: linear-gradient(
