@@ -170,7 +170,8 @@ table tr:first-child th {
   color: red;
 }
 .pubs {
-  padding: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
   background: white;
 }
 
