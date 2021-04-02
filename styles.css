@@ -22,6 +22,10 @@
   --heading-7: var(--smallestFontSize);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: watermelon;
   src: url('/assets/Watermelon Regular.otf') format('otf');
@@ -54,33 +58,36 @@ body {
 }
 #nav {
   display: grid;
-  justify-items: center;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   grid-gap: 0.5rem;
-  padding: 10px 10vw;
+  padding: 15px 10vw;
   background: var(--blue);
   border-bottom: var(--orange) solid 10px;
 }
 
 #nav > a > button {
-    background-color: var(--white);
-    border-radius: 30px 30px;
-    border: 2px solid var(--blue);
-    padding: 0.5em 1em;
-    cursor: pointer;
-    font-size: var(--smallFontSize);
-    min-width: 255px;
-  }
-
+  background-color: var(--white);
+  border-radius: 30px 30px;
+  border: 2px solid var(--blue);
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: var(--smallFontSize);
+  min-width: 255px;
 }
 
 .grow {
-  transition: all 10s ease-in-out;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  transition: transform 0.4s ease;
 }
 
 .grow:hover {
+  background-color: green;
+  cursor: pointer;
   transform: scale(1.1);
-  /* transition: all 10s ease-in-out; */
 }
 
 main {
@@ -91,7 +98,7 @@ main {
 h1 {
   font-family: watermelon, Optima, Courier;
   text-align: center;
-  text-shadow: 4px 4px 10px rgba(0,0,0,.2);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   padding: 0 15vw;
   color: var(--white);
   font-size: var(--xtra-heading);
@@ -108,7 +115,6 @@ a {
 a:visited {
   color: var(--orange);
 }
-
 
 p {
   font-size: var(--baseFontSize);
@@ -179,13 +185,13 @@ table tr:first-child th {
   color: red;
 }
 .pubs {
-  padding: 5px 10px 5px 20px ;
+  padding: 5px 10px 5px 20px;
   margin-bottom: 5vh;
   background: white;
   border-left: solid 10px var(--orange);
 }
 .pubs h4 {
-  margin:3px;
+  margin: 3px;
 }
 
 footer {
@@ -203,6 +209,28 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--blue); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  opacity: 1;
+  font-family: watermelon;
+}
+
+#myBtn:hover {
+  opacity: 0.9; /* Add a dark-grey background on hover */
 }
 
 @media only screen and (max-width: 600px) {
