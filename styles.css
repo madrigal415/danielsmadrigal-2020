@@ -6,9 +6,9 @@
   --white: whitesmoke;
 
   /* Font Sizes */
-  --baseFontSize: 1rem;
-  --baseNavSize: 0.64rem;
-  --smallFontSize: 0.8rem;
+  --baseFontSize: 1.125rem;
+  --baseNavSize: 0.8rem;
+  --smallFontSize: 1rem;
   --smallestFontSize: 0.512rem;
 
   --xtra-big-ass-heading: 3.052rem;
@@ -38,8 +38,8 @@ body {
 #header {
   display: grid;
   padding: 10px;
-  justify-content: center;
   color: var(--blue);
+  justify-content: center;
   background: linear-gradient(
     180deg,
     #1494de,
@@ -54,27 +54,44 @@ body {
 }
 #nav {
   display: grid;
-  justify-content: space-evenly;
-  grid-template-columns: repeat(3, 20vw);
-  padding: 20px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  grid-gap: 0.5rem;
+  padding: 10px 10vw;
+  background: var(--blue);
+  border-bottom: var(--orange) solid 10px;
+}
+
+#nav > a > button {
+    background-color: var(--white);
+    border-radius: 30px 30px;
+    border: 2px solid var(--blue);
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: var(--smallFontSize);
+    min-width: 255px;
+  }
+
 }
 
 .grow {
-  transition: all 0.2s ease-in-out;
+  transition: all 10s ease-in-out;
 }
 
 .grow:hover {
   transform: scale(1.1);
+  /* transition: all 10s ease-in-out; */
 }
 
 main {
   padding: 5px 10vw;
   background: var(--white);
-  border-top: 10px solid var(--green);
+  border-top: 5px solid var(--green);
 }
 h1 {
   font-family: watermelon, Optima, Courier;
   text-align: center;
+  text-shadow: 4px 4px 10px rgba(0,0,0,.2);
   padding: 0 15vw;
   color: var(--white);
   font-size: var(--xtra-heading);
@@ -91,15 +108,7 @@ a {
 a:visited {
   color: var(--orange);
 }
-button {
-  background-color: white;
-  border-radius: 30px 30px;
-  border: 2px solid var(--blue);
-  padding: 0.6em 1em;
-  cursor: pointer;
-  font-size: 0.8rem;
-  min-width: 15vw;
-}
+
 
 p {
   font-size: var(--baseFontSize);
@@ -170,9 +179,13 @@ table tr:first-child th {
   color: red;
 }
 .pubs {
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 5px 10px 5px 20px ;
+  margin-bottom: 5vh;
   background: white;
+  border-left: solid 10px var(--orange);
+}
+.pubs h4 {
+  margin:3px;
 }
 
 footer {
@@ -190,4 +203,11 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --baseFontSize: 1rem;
+    --white: #ffffff;
+  }
 }
