@@ -92,7 +92,7 @@ body {
 
 main {
   padding: 5px 10vw;
-  background: var(--white);
+  background: white;
   border-top: 5px solid var(--green);
 }
 h1 {
