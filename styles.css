@@ -200,8 +200,7 @@ footer {
       var(--blue) 75%
     )
     100;
-  background: gray;
-  color: white;
+  color: var(--blue);
   text-align: center;
   padding: 10px;
 }
