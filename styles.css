@@ -126,8 +126,11 @@ p {
   place-items: start end;
   padding: 1rem;
   background-color: var(--blue);
-  color: white;
 }
+.dataViz > a {
+  color: var(--white);
+}
+
 .dataViz:hover {
   background-color: #1494de;
   color: white;
