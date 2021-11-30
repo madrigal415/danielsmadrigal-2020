@@ -127,7 +127,7 @@ p {
   padding: 1rem;
   background-color: var(--blue);
 }
-.dataViz > a {
+#dataVizContainer > a {
   color: var(--white);
 }
 
